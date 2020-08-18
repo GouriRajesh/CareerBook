@@ -16,7 +16,7 @@ class Mail{
 	public void send(String to,String mes){
 
 			this.to = to;
-			String from = "1NH18CS068.gourirajesh@gmail.com"; 
+			String from = "fromemail"; 
 			properties = new  Properties();
 			properties.put("mail.smtp.auth","true");
 			properties.put("mail.smtp.starttls.enable","true");
@@ -29,7 +29,7 @@ class Mail{
 				Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator()
 				{
 					protected PasswordAuthentication getPasswordAuthentication() {
-						return new PasswordAuthentication("1NH18CS068.gourirajesh@gmail.com","gourirajesh1NH18CS068");
+						return new PasswordAuthentication("youremailid","yourpassword");
 					}
 				});
 				
@@ -50,7 +50,7 @@ class Mail{
 
 		this.to = to;
 		this.subject=sub;
-		String from = "1NH18CS068.gourirajesh@gmail.com"; 
+		String from = "fromemail"; 
 		properties = new  Properties();
 		properties.put("mail.smtp.auth","true");
 		properties.put("mail.smtp.starttls.enable","true");
@@ -63,7 +63,7 @@ class Mail{
 			Session session = Session.getDefaultInstance(properties, new javax.mail.Authenticator()
 			{
 				protected PasswordAuthentication getPasswordAuthentication() {
-					return new PasswordAuthentication("1NH18CS068.gourirajesh@gmail.com","gourirajesh1NH18CS068");
+					return new PasswordAuthentication("youremailid","yourpassword");
 				}
 			});
 			
